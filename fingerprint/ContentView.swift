@@ -1,25 +1,20 @@
-//
-//  ContentView.swift
-//  fingerprint
-//
-//  Created by asc on 8/24/23.
-//
-
 import SwiftUI
 import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
+    
+    @State private var fingerprint_url = "https://aaronland.github.io/fingerprint/"
+    
     var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
+        NavigationStack {
+            WebView(url: URL(string: fingerprint_url)!)
+                .ignoresSafeArea()
+                .navigationTitle("Fingerprint")
+                .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Content")
-        .padding()
     }
+    
 }
 
 #Preview(windowStyle: .automatic) {
