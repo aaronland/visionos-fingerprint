@@ -12,3 +12,7 @@ Because I do not have a Vision Pro device I can only test this in the simulator 
 
 ![](docs/images/fingerprint-visionpro-simulator.png)
 
+## See also
+
+* https://github.com/aaronland/fingerprint/
+
