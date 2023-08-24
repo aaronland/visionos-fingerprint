@@ -4,6 +4,8 @@ import RealityKitContent
 
 struct ContentView: View {
     
+    // sudo make me a settings thing
+    
     @State private var fingerprint_url = "https://aaronland.github.io/fingerprint/"
     
     var body: some View {
